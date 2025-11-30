@@ -19,17 +19,23 @@ function App() {
   const handleNavigate = (page: string) => {
     if (page === currentPage) return;
 
-    setShowMatrix(true);
     setIsTransitioning(true);
 
     setTimeout(() => {
+      setShowMatrix(true);
+    }, 100);
+
+    setTimeout(() => {
       setCurrentPage(page);
+    }, 400);
+
+    setTimeout(() => {
       setIsTransitioning(false);
-    }, 800);
+    }, 500);
 
     setTimeout(() => {
       setShowMatrix(false);
-    }, 1400);
+    }, 900);
   };
 
   const renderPage = () => {
@@ -51,11 +57,11 @@ function App() {
 
   const generateMatrixColumns = () => {
     const columns = [];
-    const columnCount = Math.floor(window.innerWidth / 12);
+    const columnCount = Math.min(Math.floor(window.innerWidth / 20), 60);
 
     for (let i = 0; i < columnCount; i++) {
       const characters = [];
-      const charCount = Math.floor(Math.random() * 20) + 15;
+      const charCount = Math.floor(Math.random() * 12) + 8;
 
       for (let j = 0; j < charCount; j++) {
         characters.push(Math.random() > 0.5 ? '1' : '0');
@@ -66,9 +72,9 @@ function App() {
           key={i}
           className="matrix-column"
           style={{
-            left: `${i * 12}px`,
-            animationDelay: `${Math.random() * 0.4}s`,
-            animationDuration: `${0.6 + Math.random() * 0.5}s`
+            left: `${(i * 100) / columnCount}%`,
+            animationDelay: `${Math.random() * 0.2}s`,
+            animationDuration: `${0.4 + Math.random() * 0.3}s`
           }}
         >
           {characters.map((char, idx) => (
@@ -76,7 +82,7 @@ function App() {
               key={idx}
               className="matrix-char"
               style={{
-                animationDelay: `${idx * 0.04}s`
+                animationDelay: `${idx * 0.02}s`
               }}
             >
               {char}
@@ -94,7 +100,7 @@ function App() {
       <Header currentPage={currentPage} onNavigate={handleNavigate} />
       <main className="relative overflow-hidden">
         <div
-          className={`transition-opacity duration-700 ease-in-out ${
+          className={`transition-opacity duration-300 ease-in-out ${
             isTransitioning ? 'opacity-0' : 'opacity-100'
           }`}
         >
@@ -102,7 +108,7 @@ function App() {
         </div>
 
         {showMatrix && (
-          <div className="matrix-overlay transition-opacity duration-300">
+          <div className="matrix-overlay transition-opacity duration-200">
             {generateMatrixColumns()}
             <div className="matrix-logo-container">
               <img
