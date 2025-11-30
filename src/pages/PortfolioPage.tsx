@@ -190,7 +190,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
           </div>
         </div>
 
-        <div className="glass-card p-12 text-center relative overflow-hidden">
+        <div className="glass-card p-8 sm:p-12 text-center relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-blue-600/10"></div>
           <div className="relative z-10">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">

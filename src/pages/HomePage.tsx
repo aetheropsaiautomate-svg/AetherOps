@@ -184,11 +184,11 @@ export default function HomePage({ onNavigate }: HomePageProps) {
           <div className="relative">
             <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyan-400/50 to-transparent"></div>
 
-            <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-12 lg:gap-8">
+            <div className="flex flex-col lg:flex-row justify-between items-center gap-12 lg:gap-8">
               {processSteps.map((step, index) => (
                 <div
                   key={index}
-                  className="flex-1 text-center group"
+                  className="flex-1 text-center group w-full"
                 >
                   <div className="relative inline-block mb-6">
                     <div className="text-7xl font-bold bg-gradient-to-br from-cyan-400 to-blue-600 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">
@@ -207,7 +207,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
 
       <section className="py-24 relative">
         <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-12">
-          <div className="glass-card p-12 text-center relative overflow-hidden">
+          <div className="glass-card p-8 sm:p-12 text-center relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-blue-600/10"></div>
             <div className="relative z-10">
               <Award className="w-16 h-16 text-cyan-400 mx-auto mb-6" />

@@ -41,7 +41,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
-          <div className="space-y-8 animate-fadeInUp">
+          <div className="space-y-8 animate-fadeInUp text-center lg:text-left">
             <div>
               <h2 className="text-4xl font-bold mb-6 text-white">Our Mission</h2>
               <p className="text-xl text-white/70 leading-relaxed mb-6">
@@ -53,7 +53,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
             </div>
           </div>
 
-          <div className="relative animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
+          <div className="relative animate-fadeInUp flex justify-center" style={{ animationDelay: '0.2s' }}>
             <div className="relative z-10">
               <img
                 src="/699BFA8B-711E-4395-B809-D35A45A3F9FC-Picsart-BackgroundRemover copy copy.png"
@@ -93,7 +93,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
         </div>
 
         <div className="mb-20">
-          <div className="glass-card p-12 relative overflow-hidden">
+          <div className="glass-card p-6 sm:p-12 relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-blue-600/5"></div>
             <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="flex justify-center animate-fadeInUp">
@@ -101,7 +101,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
                   <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/30 to-blue-600/30 blur-3xl group-hover:blur-2xl transition-all duration-500 animate-pulse-glow" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%)' }}></div>
                   <div className="relative">
                     <div className="absolute -inset-1 bg-gradient-to-br from-cyan-400 via-blue-500 to-blue-600 opacity-75 group-hover:opacity-100 transition-opacity duration-500" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%)' }}></div>
-                    <div className="relative w-80 h-[32rem] overflow-hidden" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%)' }}>
+                    <div className="relative w-64 sm:w-80 h-[28rem] sm:h-[32rem] overflow-hidden" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%)' }}>
                       <img
                         src="/image copy copy copy copy copy.png"
                         alt="Adler Shilvock - Founder"
@@ -112,15 +112,15 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
                 </div>
               </div>
 
-              <div className="space-y-6">
-                <h2 className="text-4xl font-bold text-white animate-fadeInUp">
+              <div className="space-y-6 text-center lg:text-left">
+                <h2 className="text-3xl sm:text-4xl font-bold text-white animate-fadeInUp">
                   Meet the Founder
                 </h2>
                 <div className="space-y-4 animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
-                  <p className="text-lg text-white/75 leading-relaxed">
+                  <p className="text-base sm:text-lg text-white/75 leading-relaxed">
                     AetherOps was founded by <span className="text-cyan-400 font-semibold">Adler Shilvock</span>, a young and forward-thinking innovator in web development, automation, and AI systems. Despite his age, Adler has spent years mastering modern digital technologies—building streamlined tools, high-performance websites, and intelligent workflows that rival top agencies.
                   </p>
-                  <p className="text-lg text-white/75 leading-relaxed">
+                  <p className="text-base sm:text-lg text-white/75 leading-relaxed">
                     He leads AetherOps with a refined, agency-level approach focused on clean design, efficiency, and measurable growth. Adler's mission is simple: to help businesses modernize, scale, and outperform their competition through smart design and powerful automation.
                   </p>
                 </div>
@@ -129,7 +129,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
           </div>
         </div>
 
-        <div className="glass-card p-12 text-center relative overflow-hidden">
+        <div className="glass-card p-8 sm:p-12 text-center relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-blue-600/10"></div>
           <div className="relative z-10">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
