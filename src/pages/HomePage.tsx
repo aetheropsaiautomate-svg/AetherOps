@@ -63,6 +63,8 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             <div className="space-y-8 animate-fadeInUp">
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight">
                 <span className="text-gradient">Websites & AI Systems</span>
+                <br className="hidden lg:block" />
+                <span className="hidden lg:inline-block lg:h-8"></span>
                 <br />
                 <span className="text-white">That Run Your Business For You.</span>
               </h1>
