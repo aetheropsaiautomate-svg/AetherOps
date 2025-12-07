@@ -81,7 +81,7 @@ export default function Header({ currentPage, onNavigate }: HeaderProps) {
       </div>
 
       {isMenuOpen && (
-        <div className="lg:hidden bg-black/95 border-t border-white/10">
+        <div className="lg:hidden bg-black/95 border-t border-white/10 relative z-10">
           <nav className="px-4 py-4 space-y-4">
             {navItems.map((item) => (
               <button
