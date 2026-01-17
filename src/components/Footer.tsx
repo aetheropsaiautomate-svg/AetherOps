@@ -72,9 +72,9 @@ export default function Footer({ onNavigate }: FooterProps) {
                 <Mail size={16} />
                 hello@aetherops.com
               </a>
-              <a href="tel:+1234567890" className="flex items-center gap-2 text-white/60 hover:text-cyan-400 transition-colors duration-300">
+              <a href="tel:+17252791465" className="flex items-center gap-2 text-white/60 hover:text-cyan-400 transition-colors duration-300">
                 <Phone size={16} />
-                (123) 456-7890
+                +1 (725) 279-1465
               </a>
             </div>
           </div>
