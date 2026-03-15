@@ -140,7 +140,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         {project.isTemplate && (
           <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-gradient-to-r from-purple-500/80 to-pink-500/80 text-xs font-semibold text-white flex items-center gap-1">
             <Palette size={14} />
-            Template
+            Demo
           </div>
         )}
         {!project.isTemplate && (
@@ -180,16 +180,16 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
             <span className="text-gradient">Our Portfolio</span>
           </h1>
           <p className="text-xl text-white/60 max-w-3xl mx-auto">
-            From production-ready business solutions to industry-specific templates, explore our diverse range of web development projects.
+            From production-ready business solutions to industry-specific demos, explore our diverse range of web development projects.
           </p>
         </div>
 
-        {/* Production Sites Section */}
+        {/* Live Sites Section */}
         <div className="mb-24">
           <div className="flex items-center gap-3 mb-8">
             <Briefcase className="text-green-400" size={32} />
             <h2 className="text-4xl font-bold">
-              <span className="text-gradient">Production Sites</span>
+              <span className="text-gradient">Live Sites</span>
             </h2>
           </div>
           <p className="text-white/60 mb-8 text-lg">
@@ -200,16 +200,16 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
           </div>
         </div>
 
-        {/* Template Showcases Section */}
+        {/* Demos Section */}
         <div className="mb-20">
           <div className="flex items-center gap-3 mb-8">
             <Palette className="text-purple-400" size={32} />
             <h2 className="text-4xl font-bold">
-              <span className="text-gradient">Template Showcases</span>
+              <span className="text-gradient">Demos</span>
             </h2>
           </div>
           <p className="text-white/60 mb-8 text-lg">
-            Industry-specific website templates demonstrating our design capabilities and versatility.
+            Industry-specific website demos demonstrating our design capabilities and versatility.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {templateShowcases.map((project, index) => renderProjectCard(project, index))}
