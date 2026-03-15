@@ -1,4 +1,4 @@
-import { Mail, Phone, Linkedin, Github, Twitter } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
 
 interface FooterProps {
   onNavigate: (page: string) => void;
@@ -11,12 +11,6 @@ export default function Footer({ onNavigate }: FooterProps) {
     { name: 'Portfolio', id: 'portfolio' },
     { name: 'About', id: 'about' },
     { name: 'Contact', id: 'contact' },
-  ];
-
-  const socialLinks = [
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
   ];
 
   return (
@@ -52,21 +46,6 @@ export default function Footer({ onNavigate }: FooterProps) {
 
           <div>
             <h3 className="text-white font-semibold mb-4">Connect</h3>
-            <div className="flex space-x-4 mb-4">
-              {socialLinks.map((social, index) => {
-                const Icon = social.icon;
-                return (
-                  <a
-                    key={index}
-                    href={social.href}
-                    aria-label={social.label}
-                    className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/60 hover:text-cyan-400 hover:bg-cyan-500/10 hover:shadow-neon-sm transition-all duration-300"
-                  >
-                    <Icon size={18} />
-                  </a>
-                );
-              })}
-            </div>
             <div className="space-y-2 text-sm">
               <a href="mailto:hello@aetherops.com" className="flex items-center gap-2 text-white/60 hover:text-cyan-400 transition-colors duration-300">
                 <Mail size={16} />
