@@ -47,9 +47,9 @@ export default function Footer({ onNavigate }: FooterProps) {
           <div>
             <h3 className="text-white font-semibold mb-4">Connect</h3>
             <div className="space-y-2 text-sm">
-              <a href="mailto:hello@aetherops.com" className="flex items-center gap-2 text-white/60 hover:text-cyan-400 transition-colors duration-300">
+              <a href="mailto:adler@aetherops.agency" className="flex items-center gap-2 text-white/60 hover:text-cyan-400 transition-colors duration-300">
                 <Mail size={16} />
-                hello@aetherops.com
+                adler@aetherops.agency
               </a>
               <a href="tel:+17252791465" className="flex items-center gap-2 text-white/60 hover:text-cyan-400 transition-colors duration-300">
                 <Phone size={16} />
