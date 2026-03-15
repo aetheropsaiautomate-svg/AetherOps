@@ -200,7 +200,7 @@ export default function ContactPage() {
               <h3 className="text-2xl font-bold text-white mb-6">Direct Contact</h3>
               <div className="space-y-6">
                 <a
-                  href="mailto:hello@aetherops.com"
+                  href="mailto:adler@aetherops.agency"
                   className="flex items-center gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300 border border-white/10 hover:border-cyan-400/50 group"
                 >
                   <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-cyan-500/20 to-blue-600/20 flex items-center justify-center flex-shrink-0 group-hover:shadow-neon-sm transition-all duration-300">
@@ -208,7 +208,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <div className="text-sm text-white/60">Email</div>
-                    <div className="text-white font-semibold">hello@aetherops.com</div>
+                    <div className="text-white font-semibold">adler@aetherops.agency</div>
                   </div>
                 </a>
 
