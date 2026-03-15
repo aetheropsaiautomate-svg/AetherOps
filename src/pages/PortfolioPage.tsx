@@ -104,6 +104,14 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
               className="max-w-full max-h-full object-contain"
             />
           </div>
+        ) : project.title === 'TradeVision Suite' ? (
+          <div className="w-full h-full bg-white flex items-center justify-center p-8">
+            <img
+              src="/pngg_(1).png"
+              alt={project.title}
+              className="max-w-full max-h-full object-contain"
+            />
+          </div>
         ) : (
           <iframe
             src={project.url}
