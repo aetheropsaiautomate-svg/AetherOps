@@ -232,10 +232,15 @@ export default function ContactPage() {
               <p className="text-white/60 mb-6 leading-relaxed">
                 Prefer to talk? Book a free 30-minute consultation to discuss your project in detail.
               </p>
-              <button className="group w-full px-8 py-4 border-2 border-cyan-400/50 rounded-full font-semibold text-white hover:bg-cyan-400/10 hover:border-cyan-400 transition-all duration-300 flex items-center justify-center gap-2">
+              <a
+                href="https://calendly.com/aetheropsaiautomate/new-meeting"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group w-full px-8 py-4 border-2 border-cyan-400/50 rounded-full font-semibold text-white hover:bg-cyan-400/10 hover:border-cyan-400 transition-all duration-300 flex items-center justify-center gap-2"
+              >
                 <Calendar size={20} />
                 Schedule a Call
-              </button>
+              </a>
             </div>
 
             <div className="glass-card p-8 bg-gradient-to-br from-cyan-500/10 to-blue-600/10">
