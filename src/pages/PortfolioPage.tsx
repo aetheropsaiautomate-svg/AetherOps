@@ -96,12 +96,22 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
       style={{ animationDelay: `${index * 0.1}s` }}
     >
       <div className="relative h-64 overflow-hidden bg-gradient-to-br from-cyan-500/20 to-blue-600/20">
-        <iframe
-          src={project.url}
-          className="w-full h-full pointer-events-none scale-50 origin-top-left"
-          style={{ width: '200%', height: '200%' }}
-          title={project.title}
-        />
+        {project.title === 'BinBuddy' ? (
+          <div className="w-full h-full bg-white flex items-center justify-center p-8">
+            <img
+              src="/add_a_heading_(2)_(1)_(1).png"
+              alt={project.title}
+              className="max-w-full max-h-full object-contain"
+            />
+          </div>
+        ) : (
+          <iframe
+            src={project.url}
+            className="w-full h-full pointer-events-none scale-50 origin-top-left"
+            style={{ width: '200%', height: '200%' }}
+            title={project.title}
+          />
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
         <div className="absolute top-4 right-4 px-4 py-2 rounded-full glass-effect text-sm font-semibold text-cyan-400">
           {project.industry}
