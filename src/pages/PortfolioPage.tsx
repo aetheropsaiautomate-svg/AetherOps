@@ -1,4 +1,4 @@
-import { ExternalLink, ArrowRight, Briefcase, Palette } from 'lucide-react';
+import { ExternalLink, ArrowRight, Briefcase, Palette, Scale, TrendingUp, Hammer, Sparkles, Wrench, Home, FlaskConical, Scissors } from 'lucide-react';
 
 interface PortfolioPageProps {
   onNavigate: (page: string) => void;
@@ -10,6 +10,7 @@ interface Project {
   description: string;
   url: string;
   isTemplate: boolean;
+  icon?: React.ReactNode;
 }
 
 export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
@@ -37,6 +38,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
       description: 'Sophisticated law firm website featuring practice area showcases, attorney profiles, case results, client testimonials, and secure contact forms. Designed with professional aesthetics and trust-building elements.',
       url: 'https://premium-law-firm-web-kfyr.bolt.host/',
       isTemplate: true,
+      icon: <Scale size={120} strokeWidth={1.5} />,
     },
     {
       title: 'Business Consulting Agency',
@@ -44,6 +46,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
       description: 'Modern consulting firm website with service portfolios, industry expertise highlights, case studies, team bios, and lead generation forms. Optimized for professional credibility and client acquisition.',
       url: 'https://premium-consulting-f-y93q.bolt.host/',
       isTemplate: true,
+      icon: <TrendingUp size={120} strokeWidth={1.5} />,
     },
     {
       title: 'Construction Company',
@@ -51,6 +54,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
       description: 'Professional construction business site featuring project galleries, service offerings, equipment showcases, safety certifications, and estimate request forms. Built to highlight expertise and attract commercial clients.',
       url: 'https://professional-constru-mag9.bolt.host/',
       isTemplate: true,
+      icon: <Hammer size={120} strokeWidth={1.5} />,
     },
     {
       title: 'Luxury Beauty Salon',
@@ -58,6 +62,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
       description: 'Elegant Las Vegas beauty salon website with service menus, stylist portfolios, before/after galleries, online booking integration, and membership programs. Designed for high-end clientele.',
       url: 'https://las-vegas-luxury-sal-0zup.bolt.host/',
       isTemplate: true,
+      icon: <Sparkles size={120} strokeWidth={1.5} />,
     },
     {
       title: 'Auto Repair Shop',
@@ -65,6 +70,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
       description: 'Complete auto repair shop website featuring service listings, online appointment scheduling, maintenance tips, customer reviews, and special offers. Built to drive local traffic and bookings.',
       url: 'https://las-vegas-auto-repai-fr8a.bolt.host/',
       isTemplate: true,
+      icon: <Wrench size={120} strokeWidth={1.5} />,
     },
     {
       title: 'Luxury Real Estate',
@@ -72,6 +78,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
       description: 'High-end Las Vegas realtor website with property listings, virtual tours, neighborhood guides, market insights, and lead capture forms. Designed for luxury property marketing.',
       url: 'https://luxury-las-vegas-rea-ch79.bolt.host/',
       isTemplate: true,
+      icon: <Home size={120} strokeWidth={1.5} />,
     },
     {
       title: 'Research Peptide Company',
@@ -79,6 +86,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
       description: 'Professional pharmaceutical website for peptide research products. Features product catalog, research documentation, compliance information, secure ordering system, and educational resources.',
       url: 'https://research-peptide-e-c-r4jz.bolt.host/',
       isTemplate: true,
+      icon: <FlaskConical size={120} strokeWidth={1.5} />,
     },
     {
       title: 'Big Hit Barbershop',
@@ -86,6 +94,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
       description: 'Modern Las Vegas barbershop website with service menus, barber profiles, gallery of cuts, online booking system, and loyalty program integration. Designed for urban grooming clientele.',
       url: 'https://big-hit-las-vegas-gr-3u2f.bolt.host/',
       isTemplate: true,
+      icon: <Scissors size={120} strokeWidth={1.5} />,
     },
   ];
 
@@ -111,6 +120,10 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
               alt={project.title}
               className="max-w-full max-h-full object-contain"
             />
+          </div>
+        ) : project.icon ? (
+          <div className="w-full h-full flex items-center justify-center text-cyan-400/60">
+            {project.icon}
           </div>
         ) : (
           <iframe
