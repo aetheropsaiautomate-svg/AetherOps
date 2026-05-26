@@ -19,7 +19,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
       title: 'BinBuddy',
       industry: 'Waste Management',
       description: 'Full-featured waste management platform for a Florida-based company. Features smart bin classification, service scheduling, route optimization, and customer portal with real-time tracking and automated notifications.',
-      url: 'https://bin-buddy-website-re-2kgp.bolt.host/',
+      url: 'https://binbuddy.io/',
       isTemplate: false,
     },
     {
